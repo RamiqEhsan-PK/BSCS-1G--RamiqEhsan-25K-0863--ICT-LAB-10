@@ -22,7 +22,9 @@ public:
 
     void withdraw(float amount)
     {
+        if(balance>=amount){
         balance -= amount;
+        }
     }
 
     void displayAccount()
@@ -46,4 +48,5 @@ int main()
     Account2.displayAccount();
 
     return 0;
+
 }
